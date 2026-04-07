@@ -12,7 +12,8 @@ show examples of using the 'mydsp-rust' crate with jack
 The current [`mydsp-rust-example` crate](https://github.com/inria-emeraude/mydsp-rust-example) provides example of how to use mydsp-rust crate with various audio back end: 'jack' (available on Linux and Mac-OS through 'pipewire') or 'juce' (available on windows platforms)
 
 For the application using jack (e.g. 'bypass-jack'), the ``pw-jack`` command should be used to run: 
-``` pw-jack cargo run ```
+
+```pw-jack cargo run```
 
 the general scheme of audio application Rust program is to create a 'mydsp' crate that implement the 'run' method. This 'run' method will dynamically build the audio pipeline connecting the different audio components used from 'mydsp-rust'.
 
